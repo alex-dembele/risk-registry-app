@@ -2,7 +2,7 @@
 
 IT risk management app
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/risk-registry-app/actions) (To be added later)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/risk-registry-app/actions)
 
 ## Table of Contents
 - [Risk Registry App](#risk-registry-app)
