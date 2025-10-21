@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "risk-registry-backend"
+version = "0.1.0"
+description = "Backend for Risk Registry App"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+uvicorn = "^0.23.2"
+sqlalchemy = "^2.0.22"
+psycopg2-binary = "^2.9.9"
+pydantic = "^2.4.2"
+alembic = "^1.12.1"
+# Celery for tasks async, ReportLab for PDF, openpyxl for Excel
+celery = "^5.3.4"
+redis = "^5.0.1"  # For Celery broker
+reportlab = "^4.0.7"
+openpyxl = "^3.1.2"
+python-dotenv = "^1.0.0"
+cryptography = "^41.0.5"  # For encryption
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.3"
+black = "^23.10.1"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
