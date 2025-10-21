@@ -2,7 +2,7 @@
 
 IT risk management app
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/risk-registry-app/actions) (To be added later)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/alex-dembele/risk-registry-app/actions)
 
 ## Table of Contents
 - [Risk Registry App](#risk-registry-app)
@@ -40,11 +40,12 @@ Professional tool for managing an IT risk registry, with automations, dynamic vi
 - Docker (optional for dev)
 
 ### Installation
-1. Clone the repo: `git clone https://github.com/yourusername/risk-registry-app.git`
+1. Clone the repo: `git clone https://github.com/alex-dembele/risk-registry-app.git`
 2. Backend: `cd backend && poetry install`
 3. Frontend: `cd frontend && npm install`
 4. Copy `.env.example` to `.env` and configure (DB_URL, etc.)
-5. Run: `docker-compose up` (later)
+5. Run: `docker-compose up --build`
+6. Access the frontend at http://localhost:3000 and the backend at http://localhost:8000
 
 ## Contribution
 Forks and PRs welcome! Follow the commit plan.
