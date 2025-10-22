@@ -46,7 +46,7 @@ class Owner(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
     email = Column(String, unique=True, nullable=False, index=True)
-    role = Column(String, nullable=False)  # Ex: Admin, Auditor, RiskOwner
+    role = Column(String, nullable=False)  # Admin, Auditor, RiskOwner
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
 class AuditLog(Base):
@@ -54,7 +54,7 @@ class AuditLog(Base):
     id = Column(Integer, primary_key=True, index=True)
     risk_id = Column(Integer, ForeignKey("risks.id"), nullable=True, index=True)
     user_id = Column(Integer, ForeignKey("owners.id"), nullable=True, index=True)
-    action = Column(String, nullable=False)  # Ex: CREATE, UPDATE, DELETE
+    action = Column(String, nullable=False)  
     details = Column(JSON, nullable=True)
     timestamp = Column(DateTime(timezone=True), server_default=func.now())
 
