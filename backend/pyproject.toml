@@ -19,6 +19,7 @@ reportlab = "^4.0.7"
 openpyxl = "^3.1.2"
 python-dotenv = "^1.0.0"
 cryptography = "^41.0.5"  # For encryption
+pydantic-settings = "^2.11.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.4.3"
